@@ -1,6 +1,6 @@
-🚀 Intelligent Image Classification & Robotic Navigation System
+Intelligent Image Classification & Robotic Navigation System
 
-📖 Introduction
+Introduction
 This project integrates Image Classification using TensorFlow's Inception Model and Robotic Orientation Control using ROS (Robot Operating System). It can classify objects in an image, process results, and align a robot's orientation towards a specified target object.
 
 The system combines:
@@ -10,7 +10,7 @@ Data Processing (CSV Manipulation)
 Robotics (Angular Navigation with ROS)
 Whether you're a researcher, student, or tech enthusiast, this project aims to simplify complex AI-robotics integration.
 
-🌟 Project Overview
+Project Overview:
 
 Object Detection and Classification:
 
@@ -23,9 +23,10 @@ Cleans and processes the CSV data to extract relevant information.
 Robot Navigation:
 Adjusts a robot's orientation towards a target object based on classification results.
 
-📝 Scripts Breakdown
 
-📌 1. Image Classification Script (image_classification.py)
+Scripts Breakdown
+
+1. Image Classification Script (image_classification.py)
 
 Purpose:
 Classifies objects in a given image using TensorFlow's pre-trained Inception model and logs predictions into a CSV file.
@@ -52,7 +53,7 @@ Expected Output:
 Object predictions displayed on the terminal.
 Predictions.csv file created with object names and their scores.
 
-📌 2. CSV Data Cleaning Script (csv_cleaner.py)
+2. CSV Data Cleaning Script (csv_cleaner.py)
 
 Purpose:
 Processes the raw Predictions.csv file to clean and extract meaningful data.
@@ -73,7 +74,7 @@ Expected Output:
 
 A clean FilteredData.csv file ready for the robot navigation script.
 
-📌 3. Robot Orientation Script (robot_orientation.py)
+3. Robot Orientation Script (robot_orientation.py)
 
 Purpose:
 Controls a robot's yaw (angular rotation) based on the classified target object from FilteredData.csv.
@@ -94,7 +95,8 @@ python robot_orientation.py
 Expected Output:
 Robot rotates to align with the target object's yaw angle.
 
-⚙️ Installation
+
+Installation:
 
 Ensure you have the following installed:
 
@@ -119,7 +121,7 @@ roscore
 Step 4: Run Robot Orientation Script
 python robot_orientation.py
 
-🔄 Workflow Explained
+Workflow Explained
 
 Image Classification:
 
@@ -134,10 +136,10 @@ Robot Navigation:
 Robot receives the target yaw position from the clean CSV.
 Robot aligns itself with the target object.
 
-🎯 Simple Diagram:
+Simple Diagram:
 Image → TensorFlow Model → Predictions.csv → FilteredData.csv → Robot Navigation
 
-🛠️ Troubleshooting
+Troubleshooting
 
 TensorFlow Import Errors:
 Ensure TensorFlow is installed and matches your Python version.
@@ -148,7 +150,7 @@ Verify that the scripts are executed in the correct order.
 Robot Not Rotating:
 Check if /rpy_angles topic is publishing yaw data.
 
-🚀 Future Improvements
+Future Improvements
 
 Add real-time image classification with a live camera feed.
 Implement advanced robotics maneuvers.
@@ -156,7 +158,7 @@ Improve object detection accuracy using fine-tuned models.
 
 Feel free to use, modify, and distribute it as long as you provide proper attribution.
 
-🤝 Contributions
+Contributions
 Pull requests, suggestions, and improvements are welcome!
 
-Happy Coding! 🚀
+Happy Coding!
